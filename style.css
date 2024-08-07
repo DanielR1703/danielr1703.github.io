@@ -1,5 +1,33 @@
-.center {
-    text-align: center;
-    font-family: Arial;
+/* Reset margins and paddings */
+.marginless {
+    margin: 0;
+}
 
+/* Center text with Arial font and white color */
+.center {
+    padding-left: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Style for the header */
+header {
+    padding: 20px;
+    display:flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    justify-content: center;
+    border: none; /* Remove border to avoid any potential gaps */
+    background-color: rgb(38, 164, 206); /* Set background color */
+    width: 100%; /* Ensure the header spans the full width */
+}
+
+/*Image style*/
+
+.circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
 }
