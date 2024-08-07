@@ -3,11 +3,14 @@
     margin: 0;
 }
 
+.font {
+    font-family: Arial, sans-serif;
+}
+
 /* Center text with Arial font and white color */
 .center {
     padding-left: 20px;
     text-align: center;
-    font-family: Arial, sans-serif;
     color: white;
 }
 
@@ -15,7 +18,6 @@
 header {
     padding: 20px;
     display:flex;
-    /*flex-direction: column;*/
     align-items: center;
     justify-content: center;
     border: none; /* Remove border to avoid any potential gaps */
@@ -30,4 +32,35 @@ header {
     width: 150px;
     border-radius: 50%;
     display: inline-block;
+}
+
+.button {
+    border: solid;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #048eaa; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
 }
