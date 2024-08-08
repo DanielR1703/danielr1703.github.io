@@ -24,9 +24,8 @@
 
 .box {
     border: solid 2px rgb(255, 255, 255);
-    width:auto;
+    width:100%;
     height: auto;
-    margin: 1px 1px 0px 1px;
     display: flex;
     justify-content: center;
     align-items: center;
