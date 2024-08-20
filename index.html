@@ -3,35 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="/resources/picture.jpg">
     <link rel="stylesheet" href="style.css">
+
+    <title>Daniel Ramos</title>
 </head>
 <body>
     <div class="wrapper">
-        <div class="box shadow font blue">
-            <img src="resources/picture.jpg" alt="Imagem" class="circle">
-            <flex>
-                <h1 class="center">Daniel Ramos</h1>
-                <h2 class="center">Computer Engineering Student</h2>
-            </flex>
+        <div class="site-header">
+            <h1 class="header-name">Daniel Ramos</h1>
+            <nav>
+                <a href="index.html" class="header-button">Home</a>
+                <a href="/" class="header-button">About</a>
+                <a href="/contactos" class="header-button">Contact</a>
+            </nav>
         </div>
-        <div class="heading">
-            <a href="/narcissa/" class="btn font">Projects</a>
-            <a href="/educacao/" class="btn font">Education</a>
-            <a href="/contactos/" class="btn font">Contacts</a>
-        </div>
-        <div class="about box shadow font blue">
-            <h2 class="center" style ="margin-top: 10px;">About me:</h2>
-
-            <div style="text-align:center; padding:10px;">
-                    I'm a Master's degree student at NOVA School of Science and Technology, currently on my first year.
-                    I have a huge passion about computer engineering and love to learn more about it. My main interest
-                    lies in computer graphics and game development, but I'm also interested in other areas such as web
-                    development and algorithms. I'm always looking for new challenges and opportunities to learn and
-                    improve my skills.
+        <div class="site-content">
+            <div class="image-container">
+                <img src="/resources/picture.jpg" alt="Daniel Ramos" class="profile-picture">
+            </div>
+            <div class="content-container">
+                <h2 class="content-title">Hey! I'm Daniel Ramos</h2>
+                <p class="content-text">I'm a Master's degree student at NOVA School of Science and Technology, currently on my first year. I have a huge passion about computer engineering and love to learn more about it. My main interest lies in computer graphics and game development, but I'm also interested in other areas such as web development and algorithms. I'm always looking for new challenges and opportunities to learn and improve my skills.</p>
+                <button class="content-button">Contact me!</button>
             </div>
         </div>
     </div>
-
 </body>
 </html>

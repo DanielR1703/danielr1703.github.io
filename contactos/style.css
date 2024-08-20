@@ -4,6 +4,7 @@
     box-sizing: border-box;
     background-color: #EFF6E0;
     font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -15,7 +16,7 @@
 
 .site-header {
     display: flex;
-    height: 60px;
+    height: 10vh;
     padding-left: 20px;
     padding-right: 20px;
     justify-content: space-between;
@@ -41,12 +42,7 @@
 
 .site-content {
     display: flex;
+    flex-direction: column;
+    height: 90vh;
 }
 
-.profile-picture {
-    height: 100%;
-    width: 300px;
-    border:solid 7px #124559;
-
-    margin: 10px;
-}
