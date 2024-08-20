@@ -6,6 +6,13 @@
     <title>Contactos</title>
     <link rel="icon" type="image/x-icon" href="/resources/picture.jpg">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(function() {
+            $("#header").load("../header.html");
+        })
+    </script>
+
 </head>
 <body>
     <div class="wrapper">
@@ -20,10 +27,22 @@
         </div>
         <div class="site-content">
             <h2>Contactos</h2>
-            <p>Telefone: +351 967 866 281</p>
-            <p>Email: drb.ramos@campus.fct.unl.pt</p>
-            <p>daniel.ramos2003@gmail.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/daniel-ramos-446332231/" target="_blank">Daniel Ramos</a></p>
+            <div class="contact-content">
+                <div class="linkedin-logo">
+                    <i class="fa fa-phone" style="font-size: 60px; color:black"></i>
+                    +351 967 866 281
+                </div>
+                <div class="linkedin-logo">
+                    <i class="fa fa-envelope" style="font-size: 50px; color:black"></i>
+                    daniel.ramos2003@gmail.com
+                </div>
+                <div class="linkedin-logo">
+                    <a href="https://www.linkedin.com/in/daniel-ramos-446332231/" target="_blank">                
+                        <i class="fa fa-linkedin-square" style="font-size:60px; color:#0e76a8"></i>
+                    </a>
+                    LinkedIn
+                </div>
+            </div>
         </div>
     </div>
 
