@@ -36,6 +36,9 @@
 
 .header-name {
     color: #598392;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    user-select: none;
 }
 
 /*Content*/

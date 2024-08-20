@@ -4,7 +4,6 @@
     box-sizing: border-box;
     background-color: #EFF6E0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -64,7 +63,7 @@
     align-items:start;
     width: 50vw;
     height: 100%;
-    padding-right: 30px;
+    padding-left:100px ;
 }
 
 .image-container {
@@ -82,6 +81,34 @@
     font-weight: 600;
     text-align: start;
     text-justify: inter-word;
+    padding-bottom: 20px;
+}
+
+.content-text {
+    text-align:justify;
+    line-height: 1.5em;
+    padding-right: 200px;
+    padding-bottom: 20px;
+
+}
+
+.content-button {
+    background-color: #598392;
+    color: white;
+    font-weight: bold;
+    font-family: 'Bradley Hand', cursive;
+    font-size: 1em;
+    padding:8px;
+    transform:scale(1);
+    transition-property: transform, background-color;
+    transition-duration: 0.2s;
+    transition-behavior: ease;
+
+}
+
+.content-button:hover {
+    background-color: #8B635C;
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
