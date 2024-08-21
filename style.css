@@ -160,7 +160,9 @@
     .content-text {
         text-align:justify;
         line-height: 1.25em;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .content-button {
