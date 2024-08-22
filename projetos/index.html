@@ -1,1 +1,72 @@
-projetos
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projetos.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="site-header">
+            <h1 class="header-name">Daniel Ramos</h1>
+            <nav>
+                <a href="/" class="header-button">Home</a>
+                <a href="/projetos/" class="header-button">Projects</a>
+                <a href="/" class="header-button">Education</a>
+                <a href="/contactos/" class="header-button">Contacts</a>
+            </nav>
+        </div>
+        <div class="page-content">
+            <h2 class="content-title">Projects</h2>
+            <p class="content-description">Here you can find some of the projects I've been working on. Feel free to check them out!</p>
+            <div class="projects-grid">
+                <div class="project-container">
+                    <h3 class="project-title">Fractals using WebGL</h3>
+                    <img id="myImg" src="../resources/fractals project.png" alt="Fractal visualizer created using WebGL and JavaScript" class="project-image">
+                    <a href="../cgi/projects/proj1/" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Narcissa</h3>
+                    <img id="myImg" src="../resources/narcissa.png" alt="Snake game created using JavaScript" class="project-image">
+                    <a href="../narcissa/" class="project-button">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        // Get all images with the class "project-image"
+        var images = document.querySelectorAll('.project-image');
+
+        // Loop through images and attach click event to each
+        images.forEach(function(img) {
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+</body>
+</html>
