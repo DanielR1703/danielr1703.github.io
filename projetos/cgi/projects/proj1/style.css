@@ -2,7 +2,7 @@
  * Daniel Ramos, N.62396
  * Diogo Carvalho, N.62418
  */
-.iterationCounter, .scaleCounter, .offsetCounter, .pointsCounter  {
+.iterationCounter, .scaleCounter, .offsetCounter, .pointsCounter, .controls  {
     background-color: rgba(0, 0, 0, 0);
     color: white;
     position: absolute;
@@ -19,6 +19,10 @@
 
 .pointsCounter {
   top: 60px;
+}
+
+.controls {
+  top: 80px;
 }
 
 HTML, body {
