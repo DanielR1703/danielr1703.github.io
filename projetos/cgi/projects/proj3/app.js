@@ -19,7 +19,7 @@ import * as TORUS from '../../libs/objects/torus.js';
 
 import * as STACK from '../../libs/stack.js';
 
-import * as OBJECTS from '../../proj3/objects.js';
+import * as OBJECTS from '../proj3/objects.js';
 
 let X_AXIS = 0;
 let Y_AXIS = 1;
