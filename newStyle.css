@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height:100%;
+    margin:0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.stylized-blue {
+    color: #009bd8;
+}
+
+.stylized-blue-background {
+    background-color: #009bd8 !important;
+    color: white;
+}
+
+.stylized-blue-fill {
+    fill: #009bd8;
+}
+
+.stylized-blue-border {
+    border-color: #009bd8 !important;
+}
+
+.header-elements a {
+    border-color: #009bd8 !important;
+    transition: all 0.2s ease;
+}
+
+.header-elements a:hover {
+    transform: scale(1.1);
+    color: #009bd8 !important;
+}
+
+.header-elements a:active {
+    transform: scale(0.9);
+}
+
+.blob {
+    width: 70%;
+    height: auto;
+}
+
+.main-button {
+    width: 15%;
+    border: 0;
+    transition: all 0.2s ease;
+}
+
+.main-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.main-button:active {
+    transform: scale(0.9);
+    filter: brightness(0.9);
+}
+
+.project-box {
+
+}

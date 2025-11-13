@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/resources/picture.jpg">
+    <link rel="stylesheet" href="projetos.css">
+    <title>Daniel Ramos - Projetos</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="site-header">
+            <h1 class="header-name">Daniel Ramos</h1>
+            <nav>
+                <a href="/" class="header-button">Home</a>
+                <a href="/projetos/" class="header-button">Projects</a>
+                <a href="/educacao/" class="header-button">Education</a>
+                <a href="/contactos/" class="header-button">Contacts</a>
+            </nav>
+        </div>
+        <div class="page-content">
+            <h2 class="content-title">Projects</h2>
+            <p class="content-description">Here you can find some of the projects I have worked on. Feel free to check them out!</p>
+            <p class="content-description">Click in each image to know more.</p>
+            <div class="projects-grid">
+                <div class="project-container">
+                    <h3 class="project-title">Escape Protocol</h3>
+                    <img id="myImg" src="../resources/escapeprotocol.png" alt="A VR/PC asymmetrical experience developed in 1 month!" class="project-image">
+                    <a target="_blank" href="https://drozthewolf.itch.io/escape-protocol" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">The Legend Of The Golden Carrot</h3>
+                    <img id="myImg" src="../resources/goldenCarrot.png" alt="A short 3D Platforming adventure created in 2 weeks!" class="project-image">
+                    <a target="_blank" href="https://danielr17.itch.io/the-legend-of-the-golden-carrot" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Fractals visualizer</h3>
+                    <img id="myImg" src="../resources/fractals project.png" alt="Fractal visualizer created using WebGL and JavaScript. Press any key between 0 - 9 to show a different fractal." class="project-image">
+                    <a target="_blank" href="cgi/projects/proj1/" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Crane simulation</h3>
+                    <img id="myImg" src="../resources/crane.png" alt="Simulation of a crane developed in WebGL to learn more about the use of objects to create complex structures" class="project-image">
+                    <a target="_blank" href="cgi/projects/proj2/" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Lighting simulator</h3>
+                    <img id="myImg" src="../resources/lighting.png" alt="Simulation developed in WebGL to learn more about how lighting works on a lower level." class="project-image">
+                    <a target="_blank" href="cgi/projects/proj3/" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Narcissa</h3>
+                    <img id="myImg" src="../resources/narcissa.png" alt="Snake game created using JavaScript" class="project-image">
+                    <a target="_blank" href="narcissa/" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Oakie's Journey</h3>
+                    <img id="myImg" src="../resources/oakies.jpg" alt="Currently working on a platforming game in unity" class="project-image">
+                    <a target="_blank" href="https://danielr17.itch.io/oakies-journey" class="project-button">View Project</a>
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">Ciclo das Trutas de Góis</h3>
+                    <img id="myImg" src="../resources/museu.jpg" alt="Mixed Reality program created using unity" class="project-image">
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">O Seu Vizinho</h3>
+                    <img id="myImg" src="../resources/vizinho.jpeg" alt="Developed a proof of concept website to the NOVA ImpACT! Challenges competition using Laravel and php." class="project-image">
+                </div>
+                <div class="project-container">
+                    <h3 class="project-title">This website!</h3>
+                    <img id="myImg" src="../resources/thiswebsite.png" alt="I'm developing this website using pure HTML, CSS and a little bit of JavaScript!" class="project-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        var modal = document.getElementById('myModal');
+        
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var images = document.querySelectorAll('.project-image');
+
+        images.forEach(function(img) {
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+        
+        var span = document.getElementsByClassName("close")[0];
+        
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+        </script>
+</body>
+</html>
