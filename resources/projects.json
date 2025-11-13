@@ -1,0 +1,60 @@
+{
+    "projects": [
+        {
+            "title": "Escape Protocol",
+            "description": "PCVR Asymmetrical Coop Game",
+            "image": "escapeprotocol.png",
+            "link": "https://drozthewolf.itch.io/escape-protocol"
+        },
+        {
+            "title": "Legend of the Golden Carrot",
+            "description": "2D Platformer Game",
+            "image": "goldenCarrot.png",
+            "link": "https://danielr17.itch.io/the-legend-of-the-golden-carrot"
+        },
+        {
+            "title": "Ciclo da Truta de Góis",
+            "description": "VR app for environmental education",
+            "image": "museu.jpg",
+            "link": "https://www.cm-gois.pt/visitgois/turismo/ciclo-da-truta-de-gois-parque-da-monteira"
+
+        },
+        {
+            "title": "Fractal Visualizer",
+            "description": "WebGL Fractals Visualizer",
+            "image": "fractals project.png",
+            "link": "/projetos/cgi/projects/proj1"
+        },
+        {
+            "title": "Crane Simulator",
+            "description": "WebGL 3D Crane Simulator",
+            "image": "crane.png",
+            "link": "/projetos/cgi/projects/proj2"
+        },
+        {
+            "title": "Light Simulation",
+            "description": "WebGL 3D Light Simulation",
+            "image": "lighting.png",
+            "link": "/projetos/cgi/projects/proj3"
+        },
+        {
+            "title": "O Seu Vizinho",
+            "description": "Full stack prototype for a competition",
+            "image": "vizinho.jpeg",
+            "link": "#"
+        },
+        {
+            "title": "Oakie's Journey",
+            "description": "2D Platformer Prototype ",
+            "image": "oakies.jpg",
+            "link": "#"
+        },
+        {
+            "title": "This Website",
+            "description": "Online Portfolio Website",
+            "image": "thiswebsite2.png",
+            "link": "#"
+        }
+
+    ]
+}
