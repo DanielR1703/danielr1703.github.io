@@ -38,6 +38,12 @@
             "link": "/projetos/cgi/projects/proj3"
         },
         {
+            "title": "Narcissa",
+            "description": "JS Snake Game",
+            "image": "narcissa.png",
+            "link": "/projetos/narcissa"
+        },
+        {
             "title": "O Seu Vizinho",
             "description": "Full stack prototype for a competition",
             "image": "vizinho.jpeg",
