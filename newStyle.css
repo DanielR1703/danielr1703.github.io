@@ -30,20 +30,49 @@ body {
 }
 
 .stylized-blue-border {
-    border-color: #009bd8 !important;
+    border: 2px solid #009bd8 !important;
 }
 
 .background-color {
     background-color: #ffffff;    
 }
 
+.h-35 {
+    height: 35%;
+}
+
+.transition {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
 /** Specific classes */
 
+.icon-circle {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
 .picture-size {
-    width: clamp(250px,18%, 600px);
+    max-height: 100%;
+    width: auto;
 }
 
 .flag-icon {
     width: 20px;
     height: 20px;
+}
+
+.button-animation {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.button-animation:hover {
+    background-color: #007bbf !important;
+    transform: translateZ(0) scale(1.05);
+    cursor: pointer;
+}
+
+.button-animation:active {
+    transform: translateZ(0) scale(0.95);
 }
