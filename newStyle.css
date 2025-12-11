@@ -40,6 +40,10 @@ body {
 /** Specific classes */
 
 .picture-size {
-    width: 15%;
-    aspect-ratio: auto;
+    width: clamp(250px,18%, 600px);
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
 }
