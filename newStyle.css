@@ -42,7 +42,7 @@ body {
 }
 
 .transition {
-    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
 /** Specific classes */
@@ -53,13 +53,27 @@ body {
 }
 
 .picture-size {
-    max-height: 100%;
-    width: auto;
+    width: 250px;
 }
 
 .flag-icon {
     width: 20px;
     height: 20px;
+}
+
+.navbar-anim {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.navbar-anim:hover {
+    color: #007bbf !important;
+    transform: translateZ(0) scale(1.05);
+    text-decoration: underline !important;
+}
+
+.navbar-anim:active {
+    transform: translateZ(0) scale(0.95);
 }
 
 .button-animation {

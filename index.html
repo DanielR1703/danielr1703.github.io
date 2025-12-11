@@ -21,69 +21,126 @@
 
 </head>
 
-<body class="d-flex align-items-center background-color">
-    <div class="d-flex flex-column w-75 vh-100 py-2">
-        <!-- Header Div -->
-        <div
-            class="px-3 py-2 d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 border-bottom">
-            <!-- Name -->
-            <div class="fs-5 fw-bold">Daniel Ramos</div>
+<body class="d-flex align-items-center gap-5">
 
-            <!-- Menu -->
-            <div class="d-flex gap-3 fs-6">
-                <a href="#" class="text-black text-decoration-none">Experience</a>
-                <a href="#" class="text-black text-decoration-none">Projects</a>
-                <a href="#" class="text-black text-decoration-none">Education</a>
-                <a href="#" class="text-black text-decoration-none">Contacts</a>
-            </div>
-        </div>
-
-        <!-- Body Div -->
-        <div class="d-flex flex-column flex-md-row align-items-center align-items-md-start gap-4 my-5 h-35 ">
-            <div class="h-100">
-                <img class="rounded-4 picture-size" src="/resources/picture.jpg" alt="">
-            </div>
-            <!-- Text box -->
-            <div class="d-flex flex-column h-100 w-50 justify-content-between">
-                <div class="gap-1 d-flex flex-column">
-                    <div class="fs-3 fw-bold">Hey! I'm <span class="stylized-blue">Daniel</span></div>
-                    <div class="text-muted">
-                        MSc <span class="fw-bold">Computer Science and Engineering</span> Student
-                    </div>
-                    <div class="d-flex align-items-center gap-2">
-                        <img class="flag-icon" src="resources/portugal.png" alt="">
-                        <div>Portugal</div>
-                    </div>
-                    <div>
-                        Computer Science Student passionate about <span class="stylized-blue fw-bold">Web Development</span>, <span
-                            class="stylized-blue fw-bold">Multimodal Systems</span>, <span class="stylized-blue fw-bold">Game Development</span> and 
-                            <span class="stylized-blue fw-bold">Machine Learning</span>.
-                    </div>
-                </div>
-                <!-- Buttons -->
-                <div class="d-flex align-items-center text-white gap-2 mb-2">
-                    <a target="_blank" href="resources/CV Daniel Ramos Nov2025.pdf"  class="stylized-blue-background text-decoration-none rounded-5 px-4 py-2 transition button-animation">
-                        <i class="bi bi-file-earmark-person-fill"></i>
-                        <span class="fw-bold">CV</span>
-                    </a>
-                    <a target="_blank" href="https://www.linkedin.com/in/daniel-ramos-446332231/"
-                        class="stylized-blue-background rounded-circle icon-circle d-flex justify-content-center align-items-center transition button-animation">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a target="_blank" href="https://github.com/DanielR1703"
-                        class="stylized-blue-background rounded-circle icon-circle d-flex justify-content-center align-items-center transition button-animation">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="mailto:daniel.ramos2003@gmail.com"
-                        class=" stylized-blue-background rounded-circle icon-circle d-flex justify-content-center align-items-center transition button-animation">
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-                </div>
-            </div>
+    <!-- Page Header -->
+    <div
+        class="w-75 d-flex flex-column flex-md-row justify-content-between align-items-center px-4 py-2 shadow-sm border-bottom">
+        <span class="fs-5 fw-bold">Daniel Ramos</span>
+        <div class="d-flex gap-3 fs-6">
+            <a href="#experience-section" class="text-black text-decoration-none transition navbar-anim">Experience</a>
+            <a href="#" class="text-black text-decoration-none transition navbar-anim">Projects</a>
+            <a href="#" class="text-black text-decoration-none transition navbar-anim">Education</a>
+            <a href="#" class="text-black text-decoration-none transition navbar-anim">Contacts</a>
         </div>
     </div>
 
-
+    <!-- Identification and stuff -->
+    <div class="w-75 d-flex flex-column flex-md-row align-items-center align-items-md-start gap-md-4 gap-2">
+        <!-- Image div - Used to stop image from overflowing/controlling image size -->
+        <div class="picture-size">
+            <img class="img-fluid rounded-4" src="resources/picture.jpg" />
+        </div>
+        <!-- Identification box -->
+        <div class="d-flex flex-column gap-2">
+            <div class="fs-3 fw-bold">Hey! I'm <span class="stylized-blue">Daniel</span></div>
+            <div class="text-muted">
+                MSc <span class="fw-bold">Computer Science and Engineering</span> Student
+            </div>
+            <div class="d-flex align-items-center gap-2">
+                <img class="flag-icon" src="resources/portugal.png" alt="">
+                <div>Portugal</div>
+            </div>
+            <div class="mb-4">
+                Computer Science Student passionate about <span class="stylized-blue fw-bold">Web Development</span>,
+                <span class="stylized-blue fw-bold">Multimodal Systems</span>, <span class="stylized-blue fw-bold">Game
+                    Development</span> and
+                <span class="stylized-blue fw-bold">Machine Learning</span>.
+            </div>
+            <div
+                class="d-flex justify-content-center justify-content-md-start align-items-center flex-wrap text-white gap-2">
+                <a target="_blank" href="resources/CV Daniel Ramos Nov2025.pdf"
+                    class="stylized-blue-background text-decoration-none rounded-5 px-4 py-1 transition button-animation">
+                    <i class="bi bi-file-earmark-person-fill"></i>
+                    <span class="fw-bold">CV</span>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/daniel-ramos-446332231/"
+                    class="stylized-blue-background rounded-circle d-flex justify-content-center align-items-center transition button-animation px-2 py-1">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a target="_blank" href="https://github.com/DanielR1703"
+                    class="stylized-blue-background rounded-circle d-flex justify-content-center align-items-center transition button-animation px-2 py-1">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="mailto:daniel.ramos2003@gmail.com"
+                    class=" stylized-blue-background d-flex justify-content-center align-items-center rounded-circle transition button-animation px-2 py-1">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Experience -->
+    <div class="w-75 d-flex flex-column align-items-center gap-3" id="experience-section">
+        <div class="fs-5 fw-bold">Experience</div>
+        <!-- Experience item -->
+        <div class="w-75 d-flex flex-column p-3 stylized-blue-border rounded-4 shadow-sm">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold">Apprentice Backend Developer</div>
+                    <div class="text-muted">Sky Portugal - Lisbon, Portugal</div>
+                </div>
+                <div class="text-muted">Jul 2025 - Sep 2025</div>
+            </div>
+            <!-- Description -->
+            <div class="mt-2">
+                <ul>
+                    <li>Developed a machine learning <b class="stylized-blue">anomaly detection</b> model with the goal
+                        of identifying unusual patterns within the logs of Peacock.</li>
+                    <li>Created a model based on <b class="stylized-blue">autoencoders</b> capable of flagging hard to
+                        identify piracy patterns.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Experience item -->
+        <div class="w-75 d-flex flex-column p-3 stylized-blue-border rounded-4 shadow-sm">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold">VR Development Intern</div>
+                    <div class="text-muted">Realizasom - Lisbon, Portugal</div>
+                </div>
+                <div class="text-muted">Feb 2024 - Aug 2024</div>
+            </div>
+            <!-- Description -->
+            <div class="mt-2">
+                <ul>
+                    <li>Developed an immersive <b class="stylized-blue">mixed reality</b> application that allowed users
+                        to interact
+                        with a physical in-room map in order to watch multimedia content.</li>
+                    <li>Collaborated with a multidisciplinary team to enhance performance and accessibility.</li>
+                    <li>Contributed Portugal's cultural landscape, as the project is placed on a cultural museum in
+                        Góis:<br> <a class="stylized-blue fw-bold" href="https://ciclodatruta.cm-gois.pt/"
+                            target="_blank">Ciclo da Truta de Góis</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Experience item -->
+        <div class="w-75 d-flex flex-column p-3 stylized-blue-border rounded-4 shadow-sm mb-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div>
+                    <div class="fw-bold">Fullstack Developer</div>
+                    <div class="text-muted">O Seu Vizinho - Remote, Portugal</div>
+                </div>
+                <div class="text-muted">Jun 26 2023 - Jul 14 2023</div>
+            </div>
+            <!-- Description -->
+            <div class="mt-2">
+                <ul>
+                    <li>Developed a proof-of-concept website using <b class="stylized-blue">PHP and Laravel</b> to enable management of requests related to elder care such as medication, transportation, and appointments.</li>
+                    <li>Participated in the <b class="stylized-blue">NOVA impACT! Challenges</b> competition, applying agile development methodologies.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="src/jquery-3.7.1.min.js"></script>
