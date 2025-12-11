@@ -14,6 +14,8 @@ body {
     flex-direction: column;
 }
 
+/** General classes */
+
 .stylized-blue {
     color: #009bd8;
 }
@@ -31,48 +33,13 @@ body {
     border-color: #009bd8 !important;
 }
 
-.header-elements a {
-    border-color: #009bd8 !important;
-    transition: all 0.2s ease;
+.background-color {
+    background-color: #ffffff;    
 }
 
-.header-elements a:hover {
-    transform: scale(1.1);
-    color: #009bd8 !important;
-}
+/** Specific classes */
 
-.header-elements a:active {
-    transform: scale(0.9);
-}
-
-.blob {
-    width: 70%;
-    height: auto;
-}
-
-.main-button {
+.picture-size {
     width: 15%;
-    border: 0;
-    transition: all 0.2s ease;
-}
-
-.main-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    cursor: pointer;
-}
-
-.main-button:active {
-    transform: scale(0.9);
-    filter: brightness(0.9);
-}
-
-.project-card {
-    width: 20rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    aspect-ratio: auto;
 }

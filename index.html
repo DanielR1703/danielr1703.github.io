@@ -21,51 +21,31 @@
 
 </head>
 
-<body>
-    <!-- ! Header - Probably will be changed into a separate file  -->
-    <div class="container-fluid border-bottom border-muted text-center py-2 shadow-sm rounded-4">
-        <div class="d-flex justify-content-between align-items-center px-3 py-2">
-            <strong class="fs-4">Daniel Ramos</strong>
-            <!-- Header elements -->
-            <div class="header-elements d-flex gap-3">
-                <a class="text-decoration-none text-black border-bottom border-3" href="/">Home</a>
-                <a class="text-decoration-none text-black" href="/projetos">Projects</a>
-                <a class="text-decoration-none text-black" href="/educacao">Education</a>
-                <a class="text-decoration-none text-black" href="/contactos">Contacts</a>
+<body class="background-color">
+    <!-- This box will contain everything. I'm wrapping it on a container-sm to ensure responsiveness on all devices -->
+    <div class="d-flex flex-column container-sm vh-100 py-2">
+        <!-- Header Div -->
+        <div
+            class="px-3 py-2 rounded-3 d-flex justify-content-between align-items-center">
+            <!-- Name - Options - Dark/light mode? -->
+            <div class="fs-4 fw-bold">Daniel Ramos</div>
+            <div class="d-flex gap-3">
+                <a>Experience</a>
+                <a>Projects</a>
+                <a>Education</a>
+                <a>Contacts</a>
             </div>
+            <!-- <div class="px-2 py-1 rounded-circle border border-black">
+                <i class="bi bi-moon"></i>
+            </div> -->
+        </div>
+        <!-- Body Div -->
+        <div class="flex-grow-1 border py-5">
+            <img class="rounded-4 picture-size" src="/resources/picture.jpg">
+            <p>Hello!</p>
         </div>
     </div>
-    <div class="flex-grow-1 container-fluid pb-3">
-        <div class="row h-100">
-            <!-- TEXT -->
-            <div class="col d-flex flex-column justify-content-center">
-                <h1 class="display-1 text-center m-0"><span class="fw-bold">Hey! <br>I'm </span><span class="fw-bold stylized-blue">Daniel</span></h1>
-                <p class="lead text-center mt-2 px-5">I'm a Computer Science and Engineering student at NOVA School of Science and Technology, specializing in 
-                Interactive Multimodal Systems. Throughout my academic journey, I developed a passion for exploring how people connect with technology, and I'm particularly motivated by discovering how to make those interactions more natural and intuitive.</p>
-                <div class="d-flex gap-3 mt-4 w-100 justify-content-center">
-                    <a class="main-button stylized-blue-background p-2 rounded-3 fw-bold text-center text-decoration-none" href="/contactos">Contact Me</a>
-                    <a class="main-button stylized-blue-background p-2 rounded-3 fw-bold text-center text-decoration-none" target="_blank" href="/resources/CV Daniel Ramos Nov2025.pdf">My CV</a>
-                </div>
-            </div>
-            <!-- BLOB -->
-            <div class="col d-flex justify-content-center align-items-center">
-                <svg class="stylized-blue-fill blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <mask id="mask0" mask-type="alpha">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                    </mask>
-                    <g mask="url(#mask0)">
-                        <path
-                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
-                        <image x="10" y="30" href="resources/picture-nobg.png" style="width: 450px; height: 450px" />
-                    </g>
-                </svg>
-            </div>
-        </div>
 
-    </div>
-    <!-- <img src="resources/picture.jpg" alt="Profile Picture" class="rounded-circle mx-auto d-block mt-4 border border-5 stylized-blue-border"> -->
 
 
     <!-- Scripts -->
