@@ -61,6 +61,12 @@ body {
     height: 20px;
 }
 
+.image-modal {
+    aspect-ratio: 16/9;
+    height: auto;
+    max-height: 75vh;
+}
+
 .navbar-anim {
     transform: translateZ(0);
     backface-visibility: hidden;
