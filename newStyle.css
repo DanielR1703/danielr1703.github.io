@@ -14,6 +14,8 @@ body {
     flex-direction: column;
 }
 
+/** General classes */
+
 .stylized-blue {
     color: #009bd8;
 }
@@ -28,51 +30,120 @@ body {
 }
 
 .stylized-blue-border {
-    border-color: #009bd8 !important;
+    border: 2px solid #009bd8 !important;
 }
 
-.header-elements a {
-    border-color: #009bd8 !important;
-    transition: all 0.2s ease;
+.background-color {
+    background-color: #ffffff;    
 }
 
-.header-elements a:hover {
-    transform: scale(1.1);
-    color: #009bd8 !important;
+.h-35 {
+    height: 35%;
 }
 
-.header-elements a:active {
-    transform: scale(0.9);
+.transition {
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out, text-decoration 0.2s ease-in-out;
 }
 
-.blob {
-    width: 70%;
+/** Specific classes */
+
+.icon-circle {
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.picture-size {
+    width: 200px;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.image-modal {
+    aspect-ratio: 16/9;
     height: auto;
+    max-height: 75vh;
 }
 
-.main-button {
-    width: 15%;
-    border: 0;
-    transition: all 0.2s ease;
+.navbar-anim {
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
-.main-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.navbar-anim:hover {
+    color: #007bbf !important;
+    transform: translateZ(0) scale(1.05);
+    text-decoration: underline !important;
+}
+
+.navbar-anim:active {
+    transform: translateZ(0) scale(0.95);
+}
+
+.button-animation {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.button-animation:hover {
+    background-color: #007bbf !important;
+    transform: translateZ(0) scale(1.05);
     cursor: pointer;
 }
 
-.main-button:active {
-    transform: scale(0.9);
-    filter: brightness(0.9);
+.button-animation:active {
+    transform: translateZ(0) scale(0.95);
 }
 
+/* Experience card hover */
+#experience-section .border-2 {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#experience-section .border-2:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(0, 155, 216, 0.15) !important;
+}
+
+/* Project Cards */
 .project-card {
-    width: 20rem;
+    border-color: rgba(0, 155, 216, 0.2) !important;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 155, 216, 0.15) !important;
+}
+
+.project-thumb {
+    height: 140px;
+    width: 100%;
+}
+
+.project-tag {
+    font-size: 11px;
+    font-weight: 500;
+    color: #007bbf;
+    background-color: #e0f4fc;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+/* Placeholder card */
+.project-card-placeholder {
+    border-color: rgba(0, 155, 216, 0.3) !important;
+    border-style: dashed !important;
+    min-height: 200px;
+    transition: background-color 0.2s ease;
+}
+
+.project-card-placeholder:hover {
+    background-color: rgba(0, 155, 216, 0.04);
+}
+
+/* Dashed border fix (Bootstrap não suporta nativamente) */
+.border-dashed {
+    border-style: dashed !important;
 }
