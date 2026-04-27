@@ -96,3 +96,54 @@ body {
 .button-animation:active {
     transform: translateZ(0) scale(0.95);
 }
+
+/* Experience card hover */
+#experience-section .border-2 {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+#experience-section .border-2:hover {
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(0, 155, 216, 0.15) !important;
+}
+
+/* Project Cards */
+.project-card {
+    border-color: rgba(0, 155, 216, 0.2) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 155, 216, 0.15) !important;
+}
+
+.project-thumb {
+    height: 140px;
+    width: 100%;
+}
+
+.project-tag {
+    font-size: 11px;
+    font-weight: 500;
+    color: #007bbf;
+    background-color: #e0f4fc;
+    border-radius: 20px;
+    padding: 3px 10px;
+}
+
+/* Placeholder card */
+.project-card-placeholder {
+    border-color: rgba(0, 155, 216, 0.3) !important;
+    border-style: dashed !important;
+    min-height: 200px;
+    transition: background-color 0.2s ease;
+}
+
+.project-card-placeholder:hover {
+    background-color: rgba(0, 155, 216, 0.04);
+}
+
+/* Dashed border fix (Bootstrap não suporta nativamente) */
+.border-dashed {
+    border-style: dashed !important;
+}
