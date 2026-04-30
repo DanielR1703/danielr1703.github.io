@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eecc3040-e075-479e-81a1-1b1cf04e3eb5" name="Changes" comment="Changed project box width">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eecc3040-e075-479e-81a1-1b1cf04e3eb5" name="Changes" comment="Changed CV" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +93,7 @@
       <workItem from="1777450886080" duration="171000" />
       <workItem from="1777454846239" duration="299000" />
       <workItem from="1777469474773" duration="5000" />
+      <workItem from="1777553941812" duration="115000" />
     </task>
     <task id="LOCAL-00001" summary="Created projects section">
       <option name="closed" value="true" />
@@ -128,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777318945978</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed CV">
+      <option name="closed" value="true" />
+      <created>1777554043258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777554043258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +167,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created projects section" />
     <MESSAGE value="Changed project box width" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed project box width" />
+    <MESSAGE value="Changed CV" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed CV" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
