@@ -1,0 +1,120 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Floppy Birb",
+      "title": "Hobby Game",
+      "short_description": "Small Flappy Bird clone made in under 24 hours.",
+      "description": "Floppy Birb is a small Flappy Bird clone made in under 24 hours. It features simple graphics and addictive gameplay, where players control a bird trying to navigate through a series of pipes without crashing. The game is designed to be easy to pick up but challenging to master, providing endless fun for players of all ages.",
+      "image": "birb_bg.png",
+      "highlights": [
+        "Created in under 24 hours as a game jam project.",
+        "Simple and addictive gameplay mechanics.",
+        "Designed to be accessible for players of all skill levels."
+      ],
+      "skills": [
+        "Unity",
+        "C#",
+        "Aseprite"
+      ],
+      "link": "https://danielr17.itch.io/floppy-birb"
+    },
+    {
+      "id": "2",
+      "name": "Escape Protocol VR",
+      "title": "Games and Simulated Environments Course",
+      "short_description": "Asymmetric Cooperative Game. The VR player must cooperate with its hacker companion (PC player) to solve challenges, find the USB killers and escape.",
+      "description": "During an infiltration mission into an AI, one agent falls into a trap and becomes trapped inside its network. In response, the AI activates its defenses. Outside, a hacker monitoring the mission detects the breach and opens a communication channel with the agent. The two now must work together, one inside and one outside, to bypass defenses and find an escape route before the AI eliminates the agent.",
+      "image": "escapeprotocol.png",
+      "highlights": [
+        "Asymmetric gameplay, allowing for two distinct experiences within the same bundle.",
+        "The game runs on a wide variety of VR headsets, as long as they have PCVR functionality.",
+        "Focus on communication and teamwork, creating tense and memorable cooperative moments."
+      ],
+      "skills": [
+        "Unity",
+        "C#",
+        "OpenXR",
+        "Virtual Reality"
+      ],
+      "link": "https://drozthewolf.itch.io/escape-protocol"
+    },
+    {
+      "id": "3",
+      "name": "The Legend Of The Golden Carrot",
+      "title": "Games and Simulated Environments Course",
+      "short_description": "Small 3D platformer game developed in two weeks. Used to consolidate game development foundations as well as understand typical challenges associated.",
+      "description": "TODO",
+      "image": "goldenCarrot.png",
+      "highlights": [
+        "TODO",
+        "TODO",
+        "TODO"
+      ],
+      "skills": [
+        "Unity",
+        "C#",
+        "Aseprite"
+      ],
+      "link": "https://danielr17.itch.io/the-legend-of-the-golden-carrot"
+    },
+    {
+      "id": "4",
+      "name": "Oakie's Journey",
+      "title": "Hobby Game",
+      "short_description": "2D platformer prototype developed to understand the Unity development workflow. I intend to finish it.",
+      "description": "Oakie is a normal frog... Until one day he meets a ninja and falls in love with ninja culture! Now, Oakie must embark on a journey to become a ninja and learn the hidden art of ninjutsu. This is a small 2D platformer prototype developed to understand the Unity development workflow. I intend to finish it.",
+      "image": "oakies.jpg",
+      "highlights": [
+        "TODO",
+        "TODO",
+        "TODO"
+      ],
+      "skills": [
+        "Unity",
+        "C#"
+      ],
+      "link": "https://danielr17.itch.io/oakies-journey"
+    },
+    {
+      "id": "5",
+      "name": "O Seu Vizinho - Prototype",
+      "title": "Freelancing Project",
+      "short_description": "Website prototype developed for the entrepreneurship competition NOVA impACT! Challenges, both front-end and back-end components were developed.",
+      "description": "Full-stack application developed for the NOVA impACT! Challenges competition. The main goal was to show the intended functionalities of the final product, which was a system to manage and facilitate day-to-day activities for the elderly population",
+      "image": "vizinho.jpeg",
+      "highlights": [
+        "Register users and associate elderly citizens.",
+        "Allow users to insert a plafond that the elder can use to request rides, food delivery, etc..."
+      ],
+      "skills": [
+        "PHP",
+        "Laravel",
+        "XAMPP",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "Bootstrap"
+      ],
+      "link": ""
+    },
+    {
+      "id": "6",
+      "name": "Narcissa",
+      "title": "Languages and Programming Environments Course",
+      "short_description": "Snake game variant developed to learn JavaScript.",
+      "description": "Snake game variant developed to learn JavaScript. The player controls a snake that grows in size as it eats food, but must avoid colliding with itself or the walls. The game ends when the snake collides with itself or the bushes that keep growing, and the player's score is based on how long they survive and how much food they eat. The player also needs to control which color of food they eat.",
+      "image": "narcissa.png",
+      "highlights": [
+        "Addicting score based game loop.",
+        "Interesting gameplay variations such as growing bushes and different colors of food that the player must eat."
+      ],
+      "skills": [
+        "HTML",
+        "CSS",
+        "Javascript"
+      ],
+      "link": ""
+    }
+  ]
+}

@@ -2,26 +2,39 @@
 $(document).ready(async () => {
     projects = await fetch_json();
     projects.projects.forEach(element => {
-        let card = create_project_card(element);
+        let card = create_new_project_card(element);
         $("#projects-box").append(card);
     });
 })
 
 async function fetch_json() {
-    let response = await fetch("../resources/projects.json");
+    let response = await fetch("../resources/new_projects.json");
     return response.json();
 }
 
-function create_project_card(project) {
+function create_new_project_card(project) {
     image_path = "../resources/" + project.image;
+
+    skills = project.skills.map(skill => `<span class="project-tag">${skill}</span>`).join("");
+
     let card = `
-    <div class="project-card border border-2 rounded-4 p-4 shadow-sm d-flex flex-column align-items-center">
-        <h5 class="fw-bold mb-2 stylized-blue">${project.title}</h5>
-        <p class="text-muted mb-3">${project.description}</p>
-        <img src="${image_path}" alt="${project.title} Image" class="mb-3 rounded-3 border border-3" style="width: 80%; height:10rem; object-fit: cover;">
-        <a href="${project.link}" class="main-button stylized-blue-background p-2 rounded-3 fw-bold text-center text-decoration-none" style="width: 50%;"
-            target="_blank">View More</a>
-    </div>
-    `;
+            <div class="col-12 col-md-6 col-lg-4">
+            <div class="h-100 rounded-4 shadow-sm overflow-hidden border project-card"
+                 data-bs-toggle="modal" data-bs-target=${"#modal-" + project.id} style="cursor: pointer;">
+                <div class="project-thumb position-relative overflow-hidden bg-black">
+                    <img src="${image_path}" class="w-100 h-100 object-fit-cover" alt="Escape Protocol VR" />
+                </div>
+                <div class="p-4 d-flex flex-column gap-2">
+                    <div class="d-flex justify-content-between align-items-start gap-2">
+                        <div class="fw-bold">${project.name}</div>
+                    </div>
+                    <div class="text-muted small">${project.short_description}</div>
+                    <div class="d-flex flex-wrap gap-2 mt-1">
+                        ${skills}
+                    </div>
+                </div>
+            </div>
+        </div>`;
+
     return card;
 }
