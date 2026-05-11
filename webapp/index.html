@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+    <title>Expo_Mobile</title>
+    <style>
+      html, body {
+        margin: 0; padding: 0;
+        height: 100%; background: #000;
+        overflow: hidden;
+      }
+
+      /* Both the MindAR container and Unity canvas are centred and
+         sized together by JS once the camera resolution is known. */
+      #mindar-container,
+      #unity-canvas {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        /* Start full-screen; JS will shrink to video aspect ratio */
+        width: 100%; height: 100%;
+      }
+
+      #mindar-container { z-index: 0; }
+
+      #mindar-container video {
+        position: absolute; inset: 0;
+        width: 100%  !important;
+        height: 100% !important;
+        object-fit: fill !important;
+      }
+
+      #mindar-container canvas {
+        position: absolute; inset: 0;
+        width: 100%  !important;
+        height: 100% !important;
+      }
+
+      #unity-canvas {
+        background: transparent !important;
+        z-index: 1;
+      }
+    </style>
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three":              "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/":      "https://unpkg.com/three@0.160.0/examples/jsm/",
+        "mindar-image-three": "https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-three.prod.js"
+      }
+    }
+    </script>
+
+    <script type="module">
+      import * as THREE from "three";
+      import { MindARThree } from "mindar-image-three";
+      window.THREE        = THREE;                      // expõe THREE globalmente para o jslib
+      window.MINDAR       = window.MINDAR || {};
+      window.MINDAR.IMAGE = { MindARThree };
+      window.MindARReady  = true;
+      console.log("[MindAR] MindARThree ready on window.MINDAR.IMAGE.");
+    </script>
+  </head>
+
+  <body>
+    <div id="mindar-container"></div>
+    <canvas id="unity-canvas" tabindex="-1"></canvas>
+
+    <script src="Build/target.loader.js"></script>
+    <script>
+      // ── Resize both layers to match the camera's native aspect ratio ──
+      function fitLayers(vw, vh) {
+        var winW = window.innerWidth;
+        var winH = window.innerHeight;
+        var scale = Math.min(winW / vw, winH / vh);
+        var w = Math.round(vw * scale);
+        var h = Math.round(vh * scale);
+
+        var container = document.getElementById("mindar-container");
+        var unity     = document.getElementById("unity-canvas");
+        container.style.width  = unity.style.width  = w + "px";
+        container.style.height = unity.style.height = h + "px";
+      }
+
+      // Event delegation — fires once when MindAR injects the <video>
+      // and it reports its resolution. No MutationObserver needed.
+      document.getElementById("mindar-container").addEventListener(
+        "loadedmetadata",
+        function (e) {
+          if (e.target.tagName === "VIDEO") {
+            fitLayers(e.target.videoWidth, e.target.videoHeight);
+          }
+        },
+        true   // capture phase so we catch it before MindAR does
+      );
+
+      window.addEventListener("resize", function () {
+        var video = document.querySelector("#mindar-container video");
+        if (video && video.videoWidth) fitLayers(video.videoWidth, video.videoHeight);
+      });
+
+      window.addEventListener("orientationchange", function () {
+        setTimeout(function () {
+          var video = document.querySelector("#mindar-container video");
+          if (video && video.videoWidth) fitLayers(video.videoWidth, video.videoHeight);
+        }, 300);
+      });
+
+      // ── Unity bootstrap ───────────────────────────────────────────────
+      function startUnity() {
+        createUnityInstance(document.querySelector("#unity-canvas"), {
+          dataUrl:            "Build/target.data",
+          frameworkUrl:       "Build/target.framework.js",
+          codeUrl:            "Build/target.wasm",
+          streamingAssetsUrl: "StreamingAssets",
+          companyName:        "DanielR17",
+          productName:        "Expo_Mobile",
+          productVersion:     "0.1.0",
+          matchWebGLToCanvasSize: true,
+          webglContextAttributes: {
+            alpha:              true,
+            premultipliedAlpha: false,
+          },
+        })
+        .then(function (instance) {
+          window.unityInstance = instance;
+          console.log("[Unity] Instance ready.");
+        })
+        .catch(function (err) {
+          console.error("[Unity] Failed to load:", err);
+        });
+      }
+
+      var _attempts = 0;
+      (function waitForMindAR() {
+        if (window.MindARReady) {
+          startUnity();
+        } else if (_attempts++ < 50) {
+          setTimeout(waitForMindAR, 100);
+        } else {
+          console.warn("[MindAR] Module did not resolve in time — starting Unity anyway.");
+          startUnity();
+        }
+      })();
+    </script>
+  </body>
+</html>

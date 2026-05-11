@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eecc3040-e075-479e-81a1-1b1cf04e3eb5" name="Changes" comment="Updating way to add projects">
+    <list default="true" id="eecc3040-e075-479e-81a1-1b1cf04e3eb5" name="Changes" comment="Dynamic modals and fixed bug on experience section">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/create_projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/create_projects.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,8 @@
       <workItem from="1777588526850" duration="310000" />
       <workItem from="1777627116776" duration="331000" />
       <workItem from="1777673590801" duration="2979000" />
-      <workItem from="1777708499053" duration="1774000" />
+      <workItem from="1777708499053" duration="2016000" />
+      <workItem from="1777822636206" duration="10000" />
     </task>
     <task id="LOCAL-00001" summary="Created projects section">
       <option name="closed" value="true" />
@@ -160,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777676555690</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Dynamic modals and fixed bug on experience section">
+      <option name="closed" value="true" />
+      <created>1777710501042</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777710501042</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +202,8 @@
     <MESSAGE value="Changed CV" />
     <MESSAGE value="Changed CV again" />
     <MESSAGE value="Updating way to add projects" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating way to add projects" />
+    <MESSAGE value="Dynamic modals and fixed bug on experience section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dynamic modals and fixed bug on experience section" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
