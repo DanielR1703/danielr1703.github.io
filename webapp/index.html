@@ -37,6 +37,13 @@
         height: 100% !important;
       }
 
+      /* MindAR UI overlays must NOT intercept pointer events —
+         the Unity canvas sits on top and handles all input.       */
+      .mindar-ui-overlay,
+      .mindar-ui-scanning {
+        pointer-events: none !important;
+      }
+
       #unity-canvas {
         background: transparent !important;
         z-index: 1;
